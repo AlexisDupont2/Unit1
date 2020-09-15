@@ -2,25 +2,15 @@ package app;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("hello java user");
-        System.out.println("this is my first line");
-        System.out.println("sharknato");
-        System.out.println("sharknato2");
-        System.out.println("sharknato3");
-        System.out.println("sharknato4");
-        System.out.println("sharknato5");
-        System.out.println("bee movie");
-        System.out.println("spirit");
-        System.out.println("killer bean");
-        System.out.println("star was");
-        System.out.println("sonic movie");
-
-
-
-
-
-
-
+        boolean livesInAlbertville = false;
+        char firstLetterOfName = 'A';
+        byte howManyCookiesInACan = 50;
         
+        System.out.println("how many cookies ina jar?");
+        System.out.println(howManyCookiesInACan);
+        System.out.println("first letter of my name is:");
+        System.out.println(firstLetterOfName);
+        System.out.println("Do I live in Albertville?");
+        System.out.println(livesInAlbertville);
     }
 }
