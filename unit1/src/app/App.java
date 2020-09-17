@@ -16,7 +16,7 @@ public class App {
        String adjective2 = " smelly";
 
        System.out.println(person1 + " is a programmer who likes to" + verb1 );
-       System.out.println(" Every " + dayOfWeek + " they make an" + adjective1 + food + " for breakfest and" + verb2 + " with" + person2 + ".");
+       System.out.println(" Every " + dayOfWeek + " they make an" + adjective1 + food + " for breakfest and" + verb2 + " at" + place1 + " with" + person2 + ".");
        System.out.println(" Sometimes, they go to the" + adjective2 + place2 + " with" + person2 + " so that they can" + verb3 + " together.");
 
 
