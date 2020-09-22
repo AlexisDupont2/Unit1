@@ -10,15 +10,16 @@ public class App {
        String place = input.nextLine();
        System.out.println("Ben regularly visits the " + place + " every tuesday.");
        System.out.println("Please enter an adjective ");
-       String adjective = input.nextLine();
-       System.out.println("Please enter a food");
+       String adjective1 = input.nextLine();
+       System.out.println("Please enter a food (plural)");
        String food = input.nextLine();
-       System.out.println("While at " + place + " Ben eats " + adjective + " " + food);
+       System.out.println("While at " + place + " Ben eats " + adjective1 + " " + food);
        System.out.println("Please enter a verb");
-       String verb= input.nextLine();
-       System.out.println("He normally " + verb + " after eating");
+       String verb1= input.nextLine();
+       System.out.println("He normally " + verb1 + " after eating");
        System.out.println("Please enter an adjective");
-       System.out.println("he likes " + adjective + " friends");
+       String adjective2 = input.nextLine();
+       System.out.println("he likes " + adjective2 + " friends");
        
 
     }
