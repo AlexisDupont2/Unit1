@@ -1,20 +1,11 @@
 package app;
-import java.util.Scanner;
+
 public class App {
-    public static void main(final String[] args) throws Exception {
-        Scanner input = new Scanner(System.in);
-
-        System.out.println("Please enter a color.");
-        String color = input.nextLine();
-
-        System.out.println("Please enter a number.");
-        int number = input.nextInt();
-
-        int count = 0;
-
-        while(count < number){
-            System.out.println(color);
-            count = count + 1;
+    public static void main(final String[] args) throws Exception{
+       
+        for (int i = 0; i <= 10; i = i + 1);{
+            System.out.println(" The count is " + i);
+            System.out.println(" Lets keep counting");
         }
     }
 }
