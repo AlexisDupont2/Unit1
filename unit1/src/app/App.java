@@ -1,13 +1,19 @@
 package app;
-
+import java.util.Scanner;
 public class App {
     public static void main(final String[] args) throws Exception {
 
-        for (int i = 1; i <= 20; i++) {
-            if (i % 4 == 0) {
-                System.out.println(i + " is devisable by 4");
+        Scanner input = new Scanner(System.in);
+
+        String answer1 =input.nextLine();
+
+        System.out.println("What is 4/2 ?");
+        answer1 = input.nextLine();{
+
+            if ( 4 % 2 == 2 ) {
+                System.out.println(answer1 + "Correct");
             } else {
-                System.out.println(i + " isn't divisible by 4");
+                System.out.println(answer2 + " Wrong answer");
             }
         }
 
