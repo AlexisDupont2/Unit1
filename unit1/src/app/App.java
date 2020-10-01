@@ -1,61 +1,39 @@
 package app;
 import java.util.Scanner;
 public class App {
-    public static void main(final String[] args) throws Exception {
-        int score = 0;
+    public static void main(final String[] args) {
+        
+    
+    
+        final Scanner keyboard = new Scanner(System.in);
 
-        Scanner input = new Scanner(System.in);
+        System.out.println("Pick a number 1-5 for random cat fact");{
+        final int value = keyboard.nextInt();
 
-        System.out.println("What is 4/2 ?");{
-        String answer1 =input.nextLine();
-
-            if ( answer1.equals("2") ) {
-                System.out.println(answer1 + " is  Correct");
-                score++;
-            } else {
-                System.out.println(" is Wrong answer, The correct answer is 2");
+            if (value == 1)
+             {
+                System.out.println(" They always land on their feet");
+             }
+             else if (value == 2)
+             {
+                System.out.println("A cat was the Mayor of an Alaskan town for 20 years");
+             }
+             else if (value == 3)
+             {
+                 System.out.println("Cats spend 70% of their lives sleeping");
+             }
+             else if (value == 4)
+             {
+                 System.out.println("Cats have 4 legs");
+             }
+             else if (value == 5)
+             {
+                 System.out.println("cats like drinking moving water");
+             }
+             else if (value >= 6)
+             {
+                 System.out.println("Error pick a number between 1-5");
+             }
             }
-        }
-        System.out.println("What color is a banana?");{
-        String answer2 =input.nextLine();
-
-            if ( answer2.equals("yellow") ) {
-                System.out.println(answer2 +  " is Correct");
-                score++;
-            } else {
-                System.out.println(answer2 + " is Wrong answer, the correct answer is: Yellow");
-            }
-        }
-         System.out.println(" What is 3x6?");{
-        String answer3 =input.nextLine();
-
-            if ( answer3.equals("21") ) {
-                System.out.println(answer3 + " is Correct");
-                score++;
-            } else {
-                System.out.println(answer3 + " is Wrong answer, the correct answer is: 21");
-            }
-        }
-         System.out.println(" What is the color of the moon?");{
-        String answer4 =input.nextLine();
-
-            if ( answer4.equals("Grey") ) {
-                System.out.println(answer4 + " is Correct");
-                score++;
-            } else {
-                System.out.println(answer4 + " is Wrong answer, the correct answer is Grey");
-            }
-        } System.out.println(" Why do cows moo");{
-        String answer5 =input.nextLine();
-
-            if ( answer5.equals("because they do") ) {
-                System.out.println(answer5 + " is Correct");
-                score++;
-            } else {
-                System.out.println(answer5 + " is Wrong answer, The correct answer is: because they do");
-            }
-        }
-     System.out.println("all finished");
-     System.out.println("Your score is "  + score + "/5");
-    }
+   }
 }
