@@ -3,10 +3,19 @@ import java.util.Scanner;
 public class App {
      public static void main(final String[] args) throws Exception{
         
-     for (int i = 0; i <= 1000; i = i + 100){
-         System.out.println("The count is now " + i);
-
-        }
-        System.out.println("finished");
+     Scanner console = new Scanner(System.in);
+    
+     final int password = 11;
+     
+     int attemps = 0;
+      final boolean athenticated = false;
+      do{
+         final int EnteredPassword;
+          System.out.println("Enter password");
+		EnteredPassword = console.nextInt();
+        
+    
+    }while(attemps < 3 && athenticated == false);
+            
    }
 }
