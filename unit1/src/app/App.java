@@ -19,11 +19,11 @@ public class App {
          if (password == EnteredPassword); {
         System.out.println("the birds are working for the bourgeoisie");
          boolean athenticated = true;
-         
+        
          } else {
          System.out.println("Wrong password try again");
          attemps ++;
-    
-        }while(attemps < 3 && authenticated == false);{    
+
+         }while(attemps < 3 && authenticated == false);
    }
-}
+ }
