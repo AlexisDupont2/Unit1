@@ -3,23 +3,21 @@ import java.util.Scanner;
 
 public class App {
      public static void main(final String[] args) throws Exception{
+         Scanner input = new Scanner(System.in);
 
-       
-      Scanner input = new Scanner(System.in);
-     System.out.println("Pick a number 0-100");{
-        int value = input.nextInt();
+         System.out.println("Please enter a number");
+         int num1 = input.nextInt();
+         input.nextLine();
 
-             if ( value == 4) {
-            System.out.println( value + " is correct");{
+         System.out.println("Please enter a higher number");
+         int num2 = input.nextInt();
+         input.nextLine();
 
-            }
-        }
-             else if (value <= 3) {
-             System.out.println("higher");
+         for (int i = num1; i <= num2; i ++){
+             if (i % 2 == 0){
+                 System.out.println(i);
              }
-             else if (value >= 5)
-             System.out.println("Lower");
-            }
+         }
 
     }
 
