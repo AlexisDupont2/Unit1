@@ -7,10 +7,13 @@ public class App {
         
         
         int num1 = 0;
+        boolean keepgo = false;
         
         Scanner input = new Scanner(System.in);
          int chips = 100;
 
+
+         while(keepgo == false)
          System.out.println("would you like to make an inside or outside bet? (enter in lowercase)");
          String inout1 = input.nextLine();
 
@@ -31,6 +34,9 @@ public class App {
 
          System.out.println("You will bet " + bet1 + " On " + num1);
          input.nextLine();
+
+         System.out.println("would you like to bet again? you have " + chips + " chips remaining");
+         
 
          Random rnd = new Random();
          
