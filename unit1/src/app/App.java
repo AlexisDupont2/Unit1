@@ -6,24 +6,31 @@ public class App {
      public static void main(final String[] args) throws Exception{
         
         
-        
+        int num1 = 0;
         
         Scanner input = new Scanner(System.in);
          int chips = 100;
 
-         System.out.println("would you like to make an inside or outside bet?");
-         int inout1 = input.nextInt();
-         input.nextLine();
+         System.out.println("would you like to make an inside or outside bet? (enter in lowercase)");
+         String inout1 = input.nextLine();
 
-         System.out.println("Enter the Number you would like to bet on");
-         int num1 = input.nextInt();
-         input.nextLine();
+         if (inout1.equals("inside") ) {
+             System.out.println("Enter the Number you would like to bet on");
+             num1 = input.nextInt();
+             input.nextLine();
+         }
+         else if ( inout1.equals("outside") ) {
+             System.out.println("Would you like to bet even, odd, black, or red?");
+             num1 = input.nextInt();
+             input.nextLine();
+         }
 
           System.out.println("How much would you like to bet?");
          int bet1 = input.nextInt();
          input.nextLine();
 
          System.out.println("You will bet " + bet1 + " On " + num1);
+         input.nextLine();
 
          Random rnd = new Random();
          
@@ -33,6 +40,10 @@ public class App {
          System.out.println(n1);
          
 
+
+
+
+         
 
     }
 
