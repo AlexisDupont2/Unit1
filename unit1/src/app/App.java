@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class App {
      public static void main(final String[] args) throws Exception{
-        
+         int redblk[]=new int[37];
+         redblk [0]=0
         
         int num1 = 0;
         boolean keepgo = false;
