@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class App {
      public static void main(final String[] args) throws Exception{
-         String redblk[]={"0","1 RED","2 BLACK","3 RED","4 BLACK","5 RED", "6 BLACK", "7 RED", "8 BLACK","9 RED","10 BLACK", "11 BLACK","12 RED",
-         "13 BLACK","14 RED","15 BLACK","16 RED","17 BLACK","18 RED", "19 RED","20 BLACK","21 RED","22 BLACK","23 RED","24 BLACK", "25 RED",
-         "26 BLACK", "27 RED", "28 BLACK", "29 BLACK","30 RED","31 BLACK","32 RED", "33 BLACK","34 RED", "35 BLACK", "36 RED"};
+         String redblk[]={"0","RED","BLACK","RED","BLACK","RED", "BLACK", "RED", "BLACK","RED","BLACK", "BLACK","RED",
+         "BLACK","RED","BLACK","RED","BLACK","RED", "RED","BLACK","RED","BLACK","RED","BLACK", "RED",
+         "BLACK", "RED", "BLACK", "BLACK","RED","BLACK","RED", "BLACK","RED", "BLACK", "RED"};
+         int rbnum[]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36};
         
         int num1 = 0;
         boolean keepgo = false;
@@ -51,7 +52,8 @@ public class App {
          // 0 to 36
          int n1 = rnd.nextInt (37);
          System.out.println("Sprinning.. ");
-         System.out.println(redblk[n1] );
+         System.out.println(rbnum[n1]); System.out.println(redblk[n1]);
+         
         }
     }
 
