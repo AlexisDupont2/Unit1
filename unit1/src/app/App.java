@@ -38,7 +38,7 @@ for(int i = chips; i > 0; i = i - bet1){
                     System.out.println("Enter the Number you would like to bet on (1-36)");
                     num1 = input.nextInt();
                     input.nextLine();
-                    if (num1 >= 37){
+                    if (num1 >= 37) {
                         System.out.println("INVALID NUMBER");
                         invalid1 = false;
                 } 
@@ -51,7 +51,7 @@ for(int i = chips; i > 0; i = i - bet1){
                 System.out.println("How much would you like to bet?");
                 bet1 = input.nextInt();
                 input.nextLine();
-                
+                [betchips]++;
                 if (bet1 > chips){
                     System.out.println("INVALID BET");
                     invalid1 = false;
