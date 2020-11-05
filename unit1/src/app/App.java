@@ -15,20 +15,18 @@ public class App {
         String evenodd[] = { "even", "odd", "even", "odd", "even", "odd", "even", "odd", "even", "odd", "even", "odd",
                 "even", "odd", "even", "odd", "even", "odd", "even", "odd", "even", "odd", "even", "odd", "even", "odd",
                 "even", "odd", "even", "odd", "even", "odd", "even", "odd", "even", "odd", };
-        int betchips[] = new int[10];
+        int betchips[] = new int [10];
         String bets[] = new String[10];
-
         int bet1 = 0;
         int num1 = 0;
         boolean keepgo = false;
         boolean keepgo1 = false;
-        boolean invalid1 = false;
         Scanner input = new Scanner(System.in);
         String outsidebet = null;
         int chips = 100;
 
 for(int i = chips; i > 0; i = i - bet1){
-    while (invalid1 == false){
+
         while (keepgo1 == false) {
             while (keepgo == false) {
                 System.out.println("would you like to make an inside or outside bet? (enter in lowercase)");
@@ -38,10 +36,7 @@ for(int i = chips; i > 0; i = i - bet1){
                     System.out.println("Enter the Number you would like to bet on (1-36)");
                     num1 = input.nextInt();
                     input.nextLine();
-                    if (num1 >= 37) {
-                        System.out.println("INVALID NUMBER");
-                        invalid1 = false;
-                } 
+                    
             }
                 if (inout1.equals("outside")) {
                     System.out.println("Would you like to bet even, odd, BLACK, or RED? (enter colors in caps)");
@@ -51,12 +46,7 @@ for(int i = chips; i > 0; i = i - bet1){
                 System.out.println("How much would you like to bet?");
                 bet1 = input.nextInt();
                 input.nextLine();
-                [betchips]++;
-                if (bet1 > chips){
-                    System.out.println("INVALID BET");
-                    invalid1 = false;
-                }
-            }
+            
                 System.out.println("You will bet $" + bet1 + " On " + num1 + " " + outsidebet);
                     input.nextLine();
                 
@@ -70,7 +60,7 @@ for(int i = chips; i > 0; i = i - bet1){
                     keepgo = true;
                 }
             }
-        }
+        
 
             Random rnd = new Random();
 
@@ -103,13 +93,14 @@ for(int i = chips; i > 0; i = i - bet1){
             }
             if (redblk[n1].equals(outsidebet) ) {
             System.out.println("Winner!");
+            
                         
         }
         else {
-            System.out.println(" You lost, You now have " + chips + "chips remaining");
+            System.out.println(" You lost, You now have " + chips + " chips remaining");
         }
 
-            System.out.println("Would you like to keep playing? you have" + chips + " chips remaining");
+            System.out.println("Would you like to keep playing? you have " + chips + " chips remaining");
             String kepgo1 = input.nextLine();
             if (kepgo1.equals("yes")) {
                 keepgo1 = false;
@@ -118,8 +109,9 @@ for(int i = chips; i > 0; i = i - bet1){
 
                 keepgo1 = true;
             }
-            System.out.println("Please close program");
+            System.out.println("Program Ended");
           
         }
     }
+}
 }
