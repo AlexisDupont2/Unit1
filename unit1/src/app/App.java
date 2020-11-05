@@ -17,7 +17,6 @@ public class App {
                 "even", "odd", "even", "odd", "even", "odd", "even", "odd", "even", "odd", };
         int betchips[] = new int [10];
         String bets[] = new String[10];
-        int bet1 = 0;
         int num1 = 0;
         boolean keepgo = false;
         boolean keepgo1 = false;
@@ -25,32 +24,34 @@ public class App {
         String outsidebet = null;
         int chips = 100;
 
-for(int i = chips; i > 0; i = i - bet1){
-
         while (keepgo1 == false) {
             while (keepgo == false) {
+                for(int i = 0; i < 10; i++){
                 System.out.println("would you like to make an inside or outside bet? (enter in lowercase)");
                 String inout1 = input.nextLine();
          
                 if (inout1.equals("inside")) {
                     System.out.println("Enter the Number you would like to bet on (1-36)");
-                    num1 = input.nextInt();
+                    bets[i] = input.nextLine();
+                    System.out.println("How much would you like to bet on " + bets[i]);
+                    betchips[i]= input.nextInt();
                     input.nextLine();
-                    
             }
-                if (inout1.equals("outside")) {
+                else if (inout1.equals("outside")) {
                     System.out.println("Would you like to bet even, odd, BLACK, or RED? (enter colors in caps)");
-                    outsidebet = input.nextLine();
-                }
-
-                System.out.println("How much would you like to bet?");
-                bet1 = input.nextInt();
-                input.nextLine();
-            
-                System.out.println("You will bet $" + bet1 + " On " + num1 + " " + outsidebet);
+                    bets[i] = input.nextLine();
+                System.out.println("How much would you like to bet on " + bets[i]);
+                    betchips[i]= input.nextInt();
                     input.nextLine();
-                
+                }
+                else {
+                    System.out.println("IVALID BET");
+                }
+            
+                System.out.println("You will bet $" + betchips[i] + " On " + bets[i]);
+                    input.nextLine();
 
+                    System.out.println("You have " + bets + " remaining");
                 System.out.println("would you like to bet again? you have " + chips + " chips remaining");
                 String kepgo = input.nextLine();
                 if (kepgo.equals("yes")) {
